@@ -31,7 +31,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(startMain, SPLASH_SCREEN_TIMEOUT);
 
-        super.onDestroy();
+
     }
 
 }

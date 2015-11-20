@@ -15,5 +15,10 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
     }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        finish();
+    }
 
 }
