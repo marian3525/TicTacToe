@@ -40,43 +40,10 @@ public class SplashScreenActivity extends AppCompatActivity {
 
         final int ANIMATION_START_DURATION = 1000;
         final int ANIMATION_END_DURATION = 700;
-
-        ImageView img = (ImageView) findViewById(R.id.imageView);
-        this.img=img;
-        this.img.setImageResource(R.drawable.splash_screen);
-
-        //setContentView(img);
     }
     @Override
     protected void onResume() {
         super.onResume();
-
-       /* AnimationSet set = new AnimationSet(true);
-
-        Animation fadeIn = FadeIn(1000);
-        fadeIn.setStartOffset(0);
-        set.addAnimation(fadeIn);
-
-        Animation fadeOut = FadeOut(1000);
-        fadeOut.setStartOffset(2000);
-        set.addAnimation(fadeOut);
-
-        img.startAnimation(set);*/
-    }
-
-    private Animation FadeIn(int t)
-    {
-        Animation fade;
-        fade = new AlphaAnimation(0.0f,1.0f);
-        fade.setDuration(t);
-        return fade;
-    }
-    private Animation FadeOut(int t)
-    {
-        Animation fade;
-        fade = new AlphaAnimation(1.0f,0.0f);
-        fade.setDuration(t);
-        return fade;
     }
     @Override
     public void onPause() {
